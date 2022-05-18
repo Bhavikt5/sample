@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume {
+  width: 210mm;
+  height: 297mm;
+  border: 2px solid black;
+  display: flex;
+}
+
+.leftSide {
+  width: 40%;
+  background-color: #205375;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.profileImg {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.profile {
+  padding: 30px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile > .profileHead > h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.profileContent > div {
+  margin: 15px 0;
+}
+
+.profileContent > div > i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.profileContent > .git > a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.name {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 3.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.designMain {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.designation {
+  margin-left: 25px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.designationLine {
+  width: 50%;
+  background-color: #205375;
+  height: 4px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.skills {
+  padding: 20px 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills > h4 {
+  font-size: 1.6rem;
+  color: #205375;
+  margin-bottom: 15px;
+}
+
+.skills > ul > li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.skills > ul > li > h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.skills > ul > li > p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.skills > ul > li > a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #205375;
+}
+
+.section2 .mainImg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 376px) {
+  .section2 .mainImg {
+    display: inherit;
+    position: absolute;
+    width: 375px;
+    top: 0;
+    z-index: 10;
+  }
+
+  .main {
+    display: none;
+  }
+}
